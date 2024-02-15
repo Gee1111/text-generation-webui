@@ -179,8 +179,8 @@ if __name__ == "__main__":
 
     # Load custom settings
     settings_file = None
-    if shared.args.settings is not None and Path(shared.args.settings).exists():
-        settings_file = Path(shared.args.settings)
+    if shared.args.extensions is not None and Path(shared.args.extensions).exists():
+        settings_file = Path(shared.args.extensions)
     elif Path('settings.yaml').exists():
         settings_file = Path('settings.yaml')
     elif Path('settings.json').exists():
