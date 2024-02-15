@@ -178,11 +178,11 @@ if __name__ == "__main__":
     do_cmd_flags_warnings()
 
     # Load custom settings
-        settings_file = None
+    settings_file = None
     if shared.args.settings is not None and Path(shared.args.settings).exists():
         settings_file = Path(shared.args.settings)
-    elif Path('/settings/settings.yaml').exists():
-        settings_file = Path('/settings/settings.yaml')
+    elif Path('settings.yaml').exists():
+        settings_file = Path('settings.yaml')
     elif Path('settings.json').exists():
         settings_file = Path('settings.json')
 
