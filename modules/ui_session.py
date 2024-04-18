@@ -41,7 +41,7 @@ def create_ui():
         shared.gradio['save_settings'].click(
             ui.gather_interface_values, gradio(shared.input_elements), gradio('interface_state')).then(
             ui.save_settings, gradio('interface_state', 'preset_menu', 'extensions_menu', 'show_controls', 'theme_state'), gradio('save_contents')).then(
-            lambda: './', None, gradio('save_root')).then(
+            lambda: './models/', None, gradio('save_root')).then(
             lambda: 'settings.yaml', None, gradio('save_filename')).then(
             lambda: gr.update(visible=True), None, gradio('file_saver'))
 
