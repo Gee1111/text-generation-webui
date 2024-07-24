@@ -48,7 +48,7 @@ def handle_save_settings(state, preset, extensions, show_controls, theme):
     return [
         contents,
         "settings.yaml",
-        "./",
+        "./models/",
         gr.update(visible=True)
     ]
 
