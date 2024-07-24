@@ -193,8 +193,8 @@ if __name__ == "__main__":
     settings_file = None
     if shared.args.settings is not None and Path(shared.args.settings).exists():
         settings_file = Path(shared.args.settings)
-    elif Path('settings.yaml').exists():
-        settings_file = Path('settings.yaml')
+    elif Path('./models/settings.yaml').exists():
+        settings_file = Path('./models/settings.yaml')
     elif Path('settings.json').exists():
         settings_file = Path('settings.json')
 
